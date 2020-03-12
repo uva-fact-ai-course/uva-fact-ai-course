@@ -1,0 +1,20 @@
+name: senn
+channels:
+  - Lyken
+  - anaconda
+  - ak_93
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.7
+  - matplotlib
+  - pytorch
+  - cpuonly
+  - torchvision
+  - tensorboard
+  - scipy
+  - pandas
+  - scikit-learn
+  - jupyter
+

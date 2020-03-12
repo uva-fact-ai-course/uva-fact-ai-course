@@ -1,0 +1,16 @@
+name: prototype
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy=1.16.2=py37h7e9f1db_0
+  - numpy-base=1.16.2=py37hde5b4d6_0
+  - pandas=0.24.2=py37hb3f55d8_1
+  - python=3.7.3=h0371630_0
+  - pytorch=1.2.0=py3.7_cuda10.0.130_cudnn7.6.2_0
+  - scipy=1.2.1=py37h09a28d5_1
+  - torchvision=0.2.2=py_3
+  - pillow=6.1
+  - jupyter
+  - matplotlib

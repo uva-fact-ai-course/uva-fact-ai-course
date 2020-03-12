@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#SBATCH --job-name=BIAS
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --time=1:00:00
+#SBATCH --mem=8000M
+#SBATCH --partition=gpu_shared_course
+
+echo "Start BIAS"
+cd FACT-replicate
+srun python context_bias_score.py --dataset penn --clip 0.25
+echo "Done BIAS"

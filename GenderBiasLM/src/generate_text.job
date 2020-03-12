@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#SBATCH --job-name=TXT
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --time=12:00:00
+#SBATCH --mem=16000M
+#SBATCH --partition=gpu_shared_course
+#SBATCH --gres=gpu:1
+
+echo "Start text generation for dataset ${1}"
+cd FACT-replicate
+srun python text_generation.py --dataset $1 --lmbda 0.0 --model_name dataset_$1_encoding_lmbd_0.0_decoding_lmbd_0_ASGD_True
+srun python text_generation.py --dataset $1 --lmbda 0.001 --model_name dataset_$1_encoding_lmbd_0.001_decoding_lmbd_0_ASGD_True
+srun python text_generation.py --dataset $1 --lmbda 0.01 --model_name dataset_$1_encoding_lmbd_0.01_decoding_lmbd_0_ASGD_True
+srun python text_generation.py --dataset $1 --lmbda 0.1 --model_name dataset_$1_encoding_lmbd_0.1_decoding_lmbd_0_ASGD_True
+srun python text_generation.py --dataset $1 --lmbda 0.5 --model_name dataset_$1_encoding_lmbd_0.5_decoding_lmbd_0_ASGD_True
+srun python text_generation.py --dataset $1 --lmbda 0.8 --model_name dataset_$1_encoding_lmbd_0.8_decoding_lmbd_0_ASGD_True
+srun python text_generation.py --dataset $1 --lmbda 1.0 --model_name dataset_$1_encoding_lmbd_1.0_decoding_lmbd_0_ASGD_True
+echo "Done text generation"

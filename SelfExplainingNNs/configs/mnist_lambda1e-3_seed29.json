@@ -1,0 +1,28 @@
+{
+  "train": true,
+  "conceptizer": "ConvConceptizer",
+  "image_size": 28,
+  "concept_dim": 1,
+  "parameterizer": "ConvParameterizer",
+  "cl_sizes": [1, 10, 20],
+  "hidden_sizes": [320, 50],
+  "num_concepts": 5,
+  "num_classes": 10,
+  "dropout": 0.5,
+  "aggregator": "SumAggregator",
+  "device": "cpu",
+  "lr": 2e-4,
+  "epochs": 5,
+  "robustness_loss": "mnist_robustness_loss",
+  "robust_reg": 1e-3,
+  "concept_reg": 1,
+  "print_freq": 100,
+  "exp_name": "mnist_lambda1e-3_seed29",
+  "dataloader": "mnist",
+  "data_path": "datasets/data/mnist_data",
+  "batch_size" : 200,
+  "sparsity_reg" : 2e-5,
+  "eval_freq" : 270,
+  "manual_seed": 29
+}
+

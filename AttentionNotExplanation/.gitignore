@@ -1,0 +1,14 @@
+/build/
+/dist/
+/*.egg-info/
+/venv/
+*.py[co]
+.ipynb_checkpoints/
+.*.swp
+
+/env/
+
+.vscode/
+
+*.mps
+*.sol

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#SBATCH --job-name=DM
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --time=12:00:00
+#SBATCH --mem=8000M
+#SBATCH --partition=gpu_shared_course
+#SBATCH --gres=gpu:1
+
+echo "Start training"
+cd FACT-replicate
+# srun python train.py --dataset penn --epochs 200 --batch_size 40 --encoding_lmbd 0 --tie_weights --seed 147
+# srun python train.py --dataset wikitext-2 --epochs 200 --batch_size 80 --encoding_lmbd 0 --tie_weights --seed 147
+srun python train.py --dataset dm --epochs 150 --batch_size 80 --encoding_lmbd 0 --tie_weights --seed 147
+echo "Done training"
