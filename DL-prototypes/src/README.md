@@ -2,7 +2,7 @@
 Private Github repository for the course Fairness, Accountability, Confidentiality and Transparency in AI at the University of Amsterdam. 
 
 ## Authors
-* Albert Harkema (12854794) (albert.harkema@student.uva.nl)
+* Albert Harkema (12854794) (albert.harkema@student.uva.nl, albertharkema@gmail.com)
 * Anna Langedijk (12297402) (annalangedijk@gmail.com)
 * Christiaan van der Vlist (12876658) (christiaan.vandervlist@student.uva.nl)
 * Hinrik Snær (12675326) (hinriksnaer@gmail.com)
