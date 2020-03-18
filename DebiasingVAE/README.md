@@ -5,7 +5,7 @@
 | Name                          | Email                         |
 |-------------------------------|:----------:|
 | Luisa Ebner                   |l.t.ebner@student.vu.nl        |
-| Frederic Robert Chamot        |            |
+| Frederic Robert Chamot        |  f.chamot@student.vu.nl           |
 | Julio Joaquín López González  |j.j.lopezgonzalez@student.vu.nl|
 | Maximilian Knaller            |max.knaller@student.uva.nl     |
 
