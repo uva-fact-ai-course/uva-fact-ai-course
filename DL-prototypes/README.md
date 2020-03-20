@@ -1,4 +1,4 @@
-# FACT-AI: Towards Hierarchical Explanation
+# FACT-AI: Deep Learning for Case-Based Reasoning through Prototypes: A Neural Network that Explains Its Predictions 
 Private Github repository for the course Fairness, Accountability, Confidentiality and Transparency in AI at the University of Amsterdam. This repository contains the reproduction source code, results and extended methods on the ["Deep Learning for Case-Based Reasoning through Prototypes: A Neural Network that Explains Its Predictions"](https://arxiv.org/abs/1710.04806) paper. 
 
 ## Authors
