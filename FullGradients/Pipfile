@@ -10,7 +10,7 @@ pylint = "*"
 torch = "==1.4.0"
 torchvision = "==0.5.0"
 numpy = "==1.18.1"
-opencv-python = "==4.1.2.30"
+opencv-python = "==4.2.0.32"
 
 [requires]
 python_version = "3.7"
