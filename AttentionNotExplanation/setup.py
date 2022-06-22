@@ -21,7 +21,7 @@ setuptools.setup(
     ],
     python_requires='>=3.7',
     install_requires=[
-        'numpy>=1.18.1,<1.19',
+        'numpy>=1.18.1,<1.23',
         'pandas>=0.25.3,<0.26',
         'PuLP>=2.0,<2.1',
     ],
